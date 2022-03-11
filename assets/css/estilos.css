@@ -354,6 +354,24 @@ text-align: center;
     transition-timing-function: linear;
     transition-delay: 2s;
 }
+.tipsperros p{
+    visibility: hidden;
+}
+.tipsperros:hover p{
+    visibility: visible;
+}
+.tipsperros h2{
+    visibility: hidden;
+}
+.tipsperros:hover h2{
+    visibility: visible;
+}
+.tipsperros img{
+    visibility: hidden;
+}
+.tipsperros:hover img{
+    visibility: visible;
+}
 .tipsgatos {
     background-image: url(../img/gato1.png);
     width: 100%;
@@ -366,6 +384,24 @@ text-align: center;
     transition-duration: 5s;
     transition-timing-function: linear;
     transition-delay: 2s;
+}
+.tipsgatos p{
+    visibility: hidden;
+}
+.tipsgatos:hover p{
+    visibility: visible;
+}
+.tipsgatos h2{
+    visibility: hidden;
+}
+.tipsgatos:hover h2{
+    visibility: visible;
+}
+.tipsgatos img{
+    visibility: hidden;
+}
+.tipsgatos:hover img{
+    visibility: visible;
 }
 .dog {
     display: flex;
@@ -595,11 +631,11 @@ width: 500px;
     color: var(--white-color);
 }
 .menu1 a{
-    color: var(--light-color);
-    text-decoration: none;
-    padding: 1rem;
-    display: block;
-    font-family: 'Roboto', sans-serif;
+        color: var(--light-color);
+        text-decoration: none;
+        padding: 1rem;
+        display: block;
+        font-family: 'Roboto', sans-serif;
 }
 .menu1 a:hover{
     background-color: var(--purple-color);
