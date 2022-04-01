@@ -30,13 +30,14 @@ p{
 
 header{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items:center;
     padding: 10px; 
 }
 
 .logo img{
-    max-width: 250px;
+    max-width: 270px;
     width: 100%;
 }
 
@@ -74,6 +75,7 @@ header{
 
 nav{
     display: flex;
+    flex-direction: column;
     background-color: var(--purple-color);
 }
 
@@ -87,17 +89,17 @@ nav{
 .item:hover{
     color: rgba(255,255,255, 0.4);
     border-bottom: 2px solid var(--gray-color);
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: transform ;
 }
 
 #agenda{
     display: flex;
+    flex-direction: column;
     margin-top: 0.2rem;
 }
 
 .cita{
-    flex-basis: 70%;
     background-image: url(../img/fondo.jpg);
     padding: 2rem;
 }
@@ -112,7 +114,6 @@ nav{
     font-weight: 600px;
 }
 .promocion{
-    flex-basis: 30%;
     background-color: var(--purple-color);
     text-align: center;
     padding: 2rem;
@@ -122,15 +123,19 @@ nav{
     color: var(--white-color);
     font-size: 28px;
     text-shadow: 2px 2px 2px var(--dark-color);
+    
 }
 
 .promocion img{
     border-radius: 50%;
     border: 7px solid var(--white-color);
+    max-width: 300px;
+    width: 50%;
 }
 
 #servicios{
     display:flex ;
+    flex-direction: column;
     margin-top: 2rem;
 }
 
@@ -143,11 +148,12 @@ nav{
 .servicio{
     text-align: justify;
     padding: 2rem;
-    flex-basis: 33.3%;
+    
 }
 
 .servicio img{
-    width: 250px;
+    width: 60%;
+    max-width: 300px;
     margin-left: 5rem;
     display: flex;
     justify-content: center;
@@ -166,7 +172,9 @@ nav{
 .box-footer{
     background-color: rgba(117,41,149, 0.5);
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     padding: 2rem;
 }
 
@@ -174,6 +182,7 @@ nav{
     
     text-align: center;
     color: var(--white-color);
+    margin-top: 3rem;
 }
 
 .foot h3{
@@ -186,6 +195,7 @@ nav{
 .icono{
     padding-right: 0.5rem;
 }
+
 /*Pagina de Equipo*/
 .banner img{
     width: 100%;
@@ -647,9 +657,6 @@ width: 500px;
 .menu1 i{
     margin: 3px;
 }
-.item1{
-
-}
 .contenido{
     flex-basis:80%;
     background-color: var(--ligh-color);
@@ -724,4 +731,77 @@ table td{
     font-size: 1rem;
     border-radius: 5px;
     
+}
+
+
+/*Resolucion tabletas*/
+@media screen and (min-width:768px) {
+    header{
+        flex-direction: row;
+    }
+    #agenda{
+        flex-direction: row;
+    }
+    .cita{
+        flex-basis: 50%;
+    }
+    .promocion{
+        flex-basis: 50%;
+    }
+    .promocion img{
+        max-width: 300px;
+        width: 70%;
+    }
+    #servicios{
+        display:flex ;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .servicio img{
+        width: 70%;
+        margin-left: 2rem;
+    }
+    .box-footer{
+        display: flex;
+        flex-direction: row;        
+    }
+}
+
+/*Resolucion medias o desktop*/
+@media screen and (min-width:1024px) {
+    
+    nav{
+        flex-direction: row;
+    }
+    .cita{
+        flex-basis: 60%;
+    }
+    .promocion{
+        flex-basis: 40%;
+    }
+    .promocion img{
+        max-width: 300px;
+        width: 60%;
+    }
+    .servicio img{
+        width: 70%;
+        margin-left: 3rem;
+    }
+}
+/*Resolucion macro*/
+@media screen and (min-width:1200px) {
+    .cita{
+        flex-basis: 70%;
+    }
+    .promocion{
+        flex-basis: 30%;
+    }
+    .promocion img{
+        max-width: 300px;
+        width: 60%;
+    }
+    .servicio img{
+        width: 60%;
+        margin-left: 5rem;
+    }
 }
