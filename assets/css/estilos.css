@@ -128,10 +128,15 @@ nav{
     padding: 2rem;
 }
 /*Pagina de Equipo*/
-.banner img{
-    width: 100%;
+.carousel-item img{
+    height: 100%;
+    max-width: 100%;
 }
-
+.carousel-item h1{
+    color: var(--purple-color);
+    font-style: oblique;
+    font-weight: 700;
+}
 .veterinario{
     text-align: center;
     padding: 2rem;
