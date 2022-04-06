@@ -216,16 +216,20 @@ text-align: center;
 }
 
 /*tips*/
-.tipsperros {
-    background-image: url(../img/perro1.png);
+.card-body{
     width: 100%;
-    max-width: 100%;
-    height: 360px;
+    height: 100%;
+}
+.tipsperros {
+    background-image: url(../img/dog.png);
+    background-size: 100% 100%; 
+    border-radius: 10%;
     margin-bottom: 3rem;
-    margin-top: 3rem;
+    width: 90%;
+    margin: 3rem auto 3rem;
 }
 .tipsperros:hover {
-    background: url(../img/tips\ 4.svg);
+    background: url(../img/fondos-de-dos-colores.jpg);
     transition-property: background-color;
     transition-duration: 5s;
     transition-timing-function: linear;
@@ -249,19 +253,29 @@ text-align: center;
 .tipsperros:hover img{
     visibility: visible;
 }
+.tipsperros h2{
+    color: var(--white-color);
+    text-shadow: 2px 2px 2px var(--gray-color);
+}
 .tipsgatos {
-    background-image: url(../img/gato1.png);
-    width: 100%;
-    max-width: 100%;
-    height: 360px;
+    background-image: url(../img/cat.png);
+    height: 100%;
+    background-size: 100% 100%;
+    border-radius: 10%;
     margin-bottom: 3rem;
+    width: 90%;
+    margin: 3rem auto 3rem;
 }
 .tipsgatos:hover {
-    background: url(/assets/img/tips\ 5.svg);
+    background: url(../img/fondos-de-dos-colores.jpg);
     transition-property: background-color;
     transition-duration: 5s;
     transition-timing-function: linear;
     transition-delay: 2s;
+}
+.tipsgatos h2{
+    color: var(--white-color);
+    text-shadow: 2px 2px 2px var(--gray-color);
 }
 .tipsgatos p{
     visibility: hidden;
@@ -282,20 +296,8 @@ text-align: center;
     visibility: visible;
 }
 
-.dog{
-    margin-left: 10rem;
-    margin-top: 1rem;
-    margin-bottom: 0px;
-    text-shadow: 2px 2px 3px var(--gray-color);
-    font-size: 40px;
-    color: var(--white-color);
-    max-width: 100%;
-}
-.tipsperros p{
-    width: 90%;}
+/*contacto*/
 
-
-/**/
 .form2{
     background-color:rgba(243, 243, 243, 0.5);
     height: 600px;
@@ -366,11 +368,8 @@ text-align: center;
     margin: 2px 8px;
 }
 .sedes{
-    display: flex;
-    flex-direction: column;
     font-size: 16px;
     font-weight: bold;
-    width: 200px;
 }
 .sedes img{
     width: 50px;
@@ -383,48 +382,20 @@ text-align: center;
     align-items: center;
 }
 .contacto{
-   
     text-align: center;
-    position:relative;
-    top: 1rem;
 }
 .contacto h2{
     font-size: 30px;
 }
-#contacto{
-display: flex;
-align-items: flex-start;
-margin-left: 50px;
-width: 500px;
-
-}
 #contacto iframe{
-    margin-left: 6px;
-    margin-right: 1rem;
-    position:relative;
-    top:4rem;
-}
-.mapa{
-    display: flex;
-  
+    margin: 3rem auto;
 }
 .redes{
-    max-width: 760px;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    bottom: 17rem;
-    left: 36rem;
-    margin-bottom: 0px;
-    height: 0px;
+    margin: auto;
 }
 .social{
-    flex-basis: 30%;
-    display: flex;
-    align-items: center;
-    margin-top: 2rem;
-    margin-left: 0.5rem;
+    margin: 1rem auto;
 }
 .social img{
     width: 46px;
@@ -553,77 +524,4 @@ table td{
     font-size: 1rem;
     border-radius: 5px;
     
-}
-
-
-/*Resolucion tabletas*/
-@media screen and (min-width:768px) {
-    header{
-        flex-direction: row;
-    }
-    #agenda{
-        flex-direction: row;
-    }
-    .cita{
-        flex-basis: 50%;
-    }
-    .promocion{
-        flex-basis: 50%;
-    }
-    .promocion img{
-        max-width: 300px;
-        width: 70%;
-    }
-    #servicios{
-        display:flex ;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .servicio img{
-        width: 70%;
-        margin-left: 2rem;
-    }
-    .box-footer{
-        display: flex;
-        flex-direction: row;        
-    }
-}
-
-/*Resolucion medias o desktop*/
-@media screen and (min-width:1024px) {
-    
-    nav{
-        flex-direction: row;
-    }
-    .cita{
-        flex-basis: 60%;
-    }
-    .promocion{
-        flex-basis: 40%;
-    }
-    .promocion img{
-        max-width: 300px;
-        width: 60%;
-    }
-    .servicio img{
-        width: 70%;
-        margin-left: 3rem;
-    }
-}
-/*Resolucion macro*/
-@media screen and (min-width:1200px) {
-    .cita{
-        flex-basis: 70%;
-    }
-    .promocion{
-        flex-basis: 30%;
-    }
-    .promocion img{
-        max-width: 300px;
-        width: 60%;
-    }
-    .servicio img{
-        width: 60%;
-        margin-left: 5rem;
-    }
 }
