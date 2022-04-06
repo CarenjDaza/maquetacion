@@ -23,7 +23,7 @@ header{
   margin-left:0;
 }
 .logo img{
-    max-width: 270px;
+    max-width: 280px;
     width: 100%;
 }
 .bi-power {
@@ -395,22 +395,18 @@ text-align: center;
 }
 /*estilos dashboard*/
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem;
-}
 .sesion{
     text-align: right;
     color: var(--purple-color);
-    display: flex;
-    align-items: center;
 }
 .sesion img{
     max-width: 60px;
     width: 100%;    
     border-radius: 50%;
     border: 3px solid var(--purple-color);
+}
+.bi-box-arrow-in-right{
+    color: var(--purple-color);
 }
 #dashboard{
     display: flex;
